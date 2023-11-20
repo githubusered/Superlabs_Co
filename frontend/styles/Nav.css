@@ -1,0 +1,78 @@
+nav{
+
+}
+nav .container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.container .nav-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.nav-content .nav-content-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-content-left a{
+    height: 16px;
+    width: 143px;
+}
+.nav-content-left  .links img{
+    height: 26px ; /*why does not accept it  */
+}
+
+.nav-content .nav-content-right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nav-content-right .links{ padding: 10px;}
+.nav-content-right .links h3{
+    display: block;
+    padding: 1.2rem 1rem;
+    /* font-size: 0.8rem; */
+    font-weight: 700;
+    color: #919396;
+    transition: all 200ms ease-in-out;
+}
+.nav-content-right .hamburgerMenu{
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+
+}
+.nav-content-right .links .nav-content-right-dropdownServices{
+    display: none;
+}
+
+.nav-content-right .links .nav-content-right-dropdownServices:hover{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 40px;
+
+}
+.nav-content-right .links .nav-content-right-dropdownStrategy{
+    display: none;
+}
+
+
+@media screen and (max-width:1320px) {
+    
+}
+
+@media screen and (max-width:1140px) {
+    
+}
+@media screen and (max-width:992px) {
+    
+}
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:576px) {
+    
+}
