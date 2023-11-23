@@ -1,9 +1,9 @@
-import Nav from "../components/Nav/Nav";
+import Header from "@/components/Header/Header";
 
 export default function Home() {
   return (
     <main className="">
-      <Nav />
+      <Header />
       <div style={{textAlign:'center',marginTop:'50px',fontSize:'50px'}}>Main page</div>
     </main>
   )

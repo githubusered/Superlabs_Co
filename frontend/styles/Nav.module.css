@@ -1,0 +1,130 @@
+.nav{
+    width: 100%;
+    z-index: 1020;
+    position: absolute;
+    top: 0;
+}
+nav .container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.container .nav-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.nav-content .nav-content-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content-left   .img{
+    width: 143px;
+}
+
+.nav-content .nav-content-right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nav-content-right .links{ 
+    padding: 10px;
+    text-decoration: none;
+
+    position: relative;
+}
+.nav-content-right .links h3{
+    display: block;
+    padding: 1.2rem 1rem;
+    font-size: 0.8rem; 
+    font-weight: 700;
+    color: var(--bs-ash);
+    transition: all 200ms ease-in-out;
+}
+.nav-content-right .hamburgerMenu{
+    width: 24px;
+    height: 22px;
+    padding: 0;
+    margin-left: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    vertical-align: middle;
+    border: 0 none;
+    background: none;
+    margin: 0;
+    color: var(--bs-body-bg);
+
+    display: none;
+
+}
+.links .dropDownAfter::after{
+    content: "\e900";
+    /* content: `${&#x25BC;}`; */
+    color: #eb252d;
+    font-weight: 700;
+    font-size: 0.75rem;
+
+    position: relative;
+}
+
+.links  .nav-content-right-dropdownServices{
+    display: none;
+    width: 800px;
+    height: 600px;
+    
+    
+    
+    z-index: 3333;
+    background-color: var(--bs-body-bg);
+    border-radius: 10px;
+
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -5%);
+    /* padding: 20px; */
+}
+.links .dropDownAfter:hover + .nav-content-right-dropdownServices{
+    display: block;
+}
+
+
+.nav-content-right .links .nav-content-right-dropdownServices:hover{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 40px;
+
+}
+.nav-content-right .links .nav-content-right-dropdownStrategy{
+    display: none;
+}
+
+
+@media screen and (max-width:1320px) {
+    
+}
+
+@media screen and (max-width:1140px) {
+    
+}
+@media screen and (max-width:992px) {
+
+    .nav-content-right .hamburgerMenu{
+        display: flex;
+    }
+    
+  .nav-content-right .links{ 
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:576px) {
+    
+} 

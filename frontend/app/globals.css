@@ -1,19 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   word-spacing: normal;
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   font-size: var(--bs-root-font-size);
-
   --bs-gray-100: #f8f9fa;
     --bs-gray-200: #e9ecef;
     --bs-gray-300: #dee2e6;
@@ -86,7 +86,7 @@
     --animate-delay: 1s;
     --animate-repeat: 1;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -94,6 +94,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*/
 
 ::selection {
     background: rgba(226, 98, 107, 0.7);
@@ -126,4 +127,4 @@ body {
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+} 
