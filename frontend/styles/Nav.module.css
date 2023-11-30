@@ -4,6 +4,10 @@
     position: absolute;
     top: 0;
 }
+.nav:hover{
+    background-color: #fff;
+    transition: all .5s;
+}
 nav .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -63,47 +67,178 @@ nav .container{
 
 }
 .links .dropDownAfter::after{
-    content: "\e900";
-    /* content: `${&#x25BC;}`; */
-    color: #eb252d;
-    font-weight: 700;
-    font-size: 0.75rem;
-
-    position: relative;
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid #eb252d;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
 }
 
 .links  .nav-content-right-dropdownServices{
     display: none;
-    width: 800px;
-    height: 600px;
+    width: 1080px;
+    /* height: 600px; */
     
     
     
     z-index: 3333;
     background-color: var(--bs-body-bg);
+    color: var(--bs-navy);
+    border-radius: 8px;
+    text-align: left;
+    background-clip: padding-box;
+    transition-delay: 2.5s;
+
+    position: absolute;
+    top: 100%;
+    transform: translate(-67%, -5%);
+    padding: 32px 25px 24px 25px;
+    margin: 15px;
+    box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.04);
+}
+.nav-content-right-dropdownServices .resource-augmentation{
+    width: 35%;
+    max-width: 100%;
+    padding: 0 7.5px;
+}
+
+.resource-augmentation-title{
+    color: #eb252d;
+    transition: all 200ms ease-in-out;
+
+    padding-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+
+    display: block;
+    padding: 10px 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.resource-augmentation-services{
+    column-count: 3;
+}
+.resource-augmentation .resource-augmentation-list{
+    padding-bottom: 5px;
+    column-count: 2;
+    padding-left: 0;
+}
+.resource-augmentation-list-devs{
+    white-space: normal;
+    font-weight: 700;
+    width: 100%;
+
+    display: block;
+    width: 100%;
+    padding: 4px 30px 4px 0;
+    clear: both;
+    border: 0;
+    background: transparent;
+    color: var(--bs-navy);
+    cursor: pointer;
+}
+
+.resource-augmentation-list-devs:hover{
+    color: #eb252d;
+}
+.nav-content-right-dropdownServices .it-services{
+    width: 65%;
+    max-width: 100%;
+    padding: 7.5px;
+    border-left:1px solid rgba(164, 174, 198, 0.2);
+    padding: 4px 30px;
+}
+.links:hover .dropDownAfter + .nav-content-right-dropdownServices{
+    display: flex;
+    flex-wrap: wrap;
+    /* transition: all 1.5s ease; */
+    transition-delay: 0s;
+}
+
+
+
+
+.links  .nav-content-right-dropdownStrategy{
+    display: none;
+    width: 300px;
+    /* height: 300px; */
+    
+    transition-delay: 1.5s;
+    
+    z-index: 3334;
+    background-color: var(--bs-body-bg);
     border-radius: 10px;
 
     position: absolute;
     top: 100%;
-    transform: translate(-50%, -5%);
-    /* padding: 20px; */
+    transform: translate(-30%, -5%);
+    padding: 20px;
 }
-.links .dropDownAfter:hover + .nav-content-right-dropdownServices{
+.links:hover .dropDownAfter + .nav-content-right-dropdownStrategy{
     display: block;
+    transition-delay: 0s;
 }
 
 
-.nav-content-right .links .nav-content-right-dropdownServices:hover{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 40px;
 
+
+.posRelative{
+    position: relative;
 }
-.nav-content-right .links .nav-content-right-dropdownStrategy{
+
+.posRelative .afterArrowRight::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 0.4rem solid transparent;
+    border-bottom: 0.4rem solid transparent;
+    border-left: 0.5rem solid #eb252d;
+}
+.posRelative .afterArrowRight{
+    position: relative;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.doubleDropDown{
     display: none;
+    position: absolute;
+    left: -14rem;
+
+    z-index: 3331;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-navy);
+    border-radius: 8px;
+    text-align: left;
+    background-clip: padding-box;
+
+
+    transform: translate(0, -35%);
+    padding: 32px 25px 24px 25px;
+    margin: 15px;
+    box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.04);
+
+}
+.resource-augmentation-list-devs:hover > .doubleDropDown{
+    display: block;
 }
 
+.doubleDropDownLi{
+    display: list-item;
+    color: var(--bs-navy);
+}
 
 @media screen and (max-width:1320px) {
     
